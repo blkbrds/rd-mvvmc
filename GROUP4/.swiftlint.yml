@@ -1,0 +1,42 @@
+reporter: xcode
+opt_in_rules:
+    - force_unwrapping
+    - vertical_whitespace
+    - empty_count
+    - closure_end_indentation
+    - closure_spacing
+    - explicit_init
+    - first_where
+    - nimble_operator
+    - number_separator
+    - object_literal
+    - operator_usage_whitespace
+    - overridden_super_call
+    - prohibited_super_call
+    - redundant_nil_coalescing
+disabled_rules:
+    - todo
+    - identifier_name
+    - type_name
+    - trailing_whitespace
+excluded:
+    - GROUP4Tests
+line_length: 200
+file_length: 1000
+force_unwrapping: error
+function_parameter_count: 10
+function_body_length: 100
+type_body_length: 1000
+cyclomatic_complexity: 15
+custom_rules:
+    disable:
+        name: "Disable Rule In Code"
+        regex: '(swiftlint:disable)'
+        message: "Please do not disable rule in code. "
+        severity: error
+        match_kinds: comment
+    outlet_collection:
+        name: "outlet_collection"
+        regex: '(@IBOutletCollection)'
+        message: "IBOutletCollection is not permitted. "
+        severity: error

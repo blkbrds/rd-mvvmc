@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		648A9DB725CB9D1300E86561 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 648A9DB625CB9D1300E86561 /* Moya */; };
+		648A9DBC25CB9D5100E86561 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 648A9DBB25CB9D5100E86561 /* SDWebImage */; };
+		648A9DC125CB9D9A00E86561 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 648A9DC025CB9D9A00E86561 /* PKHUD */; };
+		648A9DC625CB9E0500E86561 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 648A9DC525CB9E0500E86561 /* SideMenu */; };
 		A3D49DB325CB9467009211F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D49DB225CB9467009211F3 /* AppDelegate.swift */; };
 		A3D49DB525CB9467009211F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D49DB425CB9467009211F3 /* SceneDelegate.swift */; };
 		A3D49DB725CB9467009211F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D49DB625CB9467009211F3 /* ViewController.swift */; };
@@ -43,6 +47,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				648A9DC125CB9D9A00E86561 /* PKHUD in Frameworks */,
+				648A9DBC25CB9D5100E86561 /* SDWebImage in Frameworks */,
+				648A9DC625CB9E0500E86561 /* SideMenu in Frameworks */,
+				648A9DB725CB9D1300E86561 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,12 +114,19 @@
 				A3D49DAB25CB9467009211F3 /* Sources */,
 				A3D49DAC25CB9467009211F3 /* Frameworks */,
 				A3D49DAD25CB9467009211F3 /* Resources */,
+				648A9DB225CB9BAD00E86561 /* Swiftlint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GROUP4;
+			packageProductDependencies = (
+				648A9DB625CB9D1300E86561 /* Moya */,
+				648A9DBB25CB9D5100E86561 /* SDWebImage */,
+				648A9DC025CB9D9A00E86561 /* PKHUD */,
+				648A9DC525CB9E0500E86561 /* SideMenu */,
+			);
 			productName = GROUP4;
 			productReference = A3D49DAF25CB9467009211F3 /* GROUP4.app */;
 			productType = "com.apple.product-type.application";
@@ -141,7 +156,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Khoa Vo T.A.";
 				TargetAttributes = {
 					A3D49DAE25CB9467009211F3 = {
@@ -162,6 +177,12 @@
 				Base,
 			);
 			mainGroup = A3D49DA625CB9467009211F3;
+			packageReferences = (
+				648A9DB525CB9D1300E86561 /* XCRemoteSwiftPackageReference "Moya" */,
+				648A9DBA25CB9D5100E86561 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				648A9DBF25CB9D9A00E86561 /* XCRemoteSwiftPackageReference "PKHUD" */,
+				648A9DC425CB9E0400E86561 /* XCRemoteSwiftPackageReference "SideMenu" */,
+			);
 			productRefGroup = A3D49DB025CB9467009211F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -190,6 +211,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		648A9DB225CB9BAD00E86561 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A3D49DAB25CB9467009211F3 /* Sources */ = {
@@ -258,6 +300,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -318,6 +361,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -459,6 +503,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		648A9DB525CB9D1300E86561 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
+		648A9DBA25CB9D5100E86561 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.4;
+			};
+		};
+		648A9DBF25CB9D9A00E86561 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+		648A9DC425CB9E0400E86561 /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		648A9DB625CB9D1300E86561 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 648A9DB525CB9D1300E86561 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		648A9DBB25CB9D5100E86561 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 648A9DBA25CB9D5100E86561 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		648A9DC025CB9D9A00E86561 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 648A9DBF25CB9D9A00E86561 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+		648A9DC525CB9E0500E86561 /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 648A9DC425CB9E0400E86561 /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A3D49DA725CB9467009211F3 /* Project object */;
 }
