@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6402ABFA25DCC0EE002F99ED /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6402ABF925DCC0EE002F99ED /* UIViewController+Extensions.swift */; };
-		6402AC0025DCC25A002F99ED /* TrandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6402ABFF25DCC259002F99ED /* TrandingViewController.swift */; };
-		6402AC0625DCC271002F99ED /* TrandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6402AC0525DCC271002F99ED /* TrandingViewModel.swift */; };
+		6402AC0025DCC25A002F99ED /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6402ABFF25DCC259002F99ED /* TrendingViewController.swift */; };
+		6402AC0625DCC271002F99ED /* TrendingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6402AC0525DCC271002F99ED /* TrendingViewModel.swift */; };
 		6402AC0E25DCC9E3002F99ED /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 6402AC0D25DCC9E3002F99ED /* MBProgressHUD */; };
 		648A9DB725CB9D1300E86561 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 648A9DB625CB9D1300E86561 /* Moya */; };
 		648A9DBC25CB9D5100E86561 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 648A9DBB25CB9D5100E86561 /* SDWebImage */; };
@@ -41,8 +41,8 @@
 
 /* Begin PBXFileReference section */
 		6402ABF925DCC0EE002F99ED /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
-		6402ABFF25DCC259002F99ED /* TrandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrandingViewController.swift; sourceTree = "<group>"; };
-		6402AC0525DCC271002F99ED /* TrandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrandingViewModel.swift; sourceTree = "<group>"; };
+		6402ABFF25DCC259002F99ED /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		6402AC0525DCC271002F99ED /* TrendingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewModel.swift; sourceTree = "<group>"; };
 		648A9DD325CBEEE500E86561 /* Trending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trending.swift; sourceTree = "<group>"; };
 		648A9DD925CBF21700E86561 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		648A9DDF25CBF50900E86561 /* Optional+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
@@ -113,18 +113,18 @@
 		6402ABFD25DCC229002F99ED /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				6402ABFE25DCC232002F99ED /* Tranding */,
+				6402ABFE25DCC232002F99ED /* Trending */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		6402ABFE25DCC232002F99ED /* Tranding */ = {
+		6402ABFE25DCC232002F99ED /* Trending */ = {
 			isa = PBXGroup;
 			children = (
-				6402ABFF25DCC259002F99ED /* TrandingViewController.swift */,
-				6402AC0525DCC271002F99ED /* TrandingViewModel.swift */,
+				6402ABFF25DCC259002F99ED /* TrendingViewController.swift */,
+				6402AC0525DCC271002F99ED /* TrendingViewModel.swift */,
 			);
-			path = Tranding;
+			path = Trending;
 			sourceTree = "<group>";
 		};
 		648A9DD225CBEECB00E86561 /* Model */ = {
@@ -344,13 +344,13 @@
 				648A9DD425CBEEE500E86561 /* Trending.swift in Sources */,
 				648A9DE025CBF50900E86561 /* Optional+Extensions.swift in Sources */,
 				A3D49DB325CB9467009211F3 /* AppDelegate.swift in Sources */,
-				6402AC0625DCC271002F99ED /* TrandingViewModel.swift in Sources */,
+				6402AC0625DCC271002F99ED /* TrendingViewModel.swift in Sources */,
 				648A9DE925CC030300E86561 /* APIConstants.swift in Sources */,
 				648A9DF925CCFE8A00E86561 /* APIResponse+Error.swift in Sources */,
 				6402ABFA25DCC0EE002F99ED /* UIViewController+Extensions.swift in Sources */,
 				A3D49DB525CB9467009211F3 /* SceneDelegate.swift in Sources */,
 				648A9DDA25CBF21700E86561 /* Media.swift in Sources */,
-				6402AC0025DCC25A002F99ED /* TrandingViewController.swift in Sources */,
+				6402AC0025DCC25A002F99ED /* TrendingViewController.swift in Sources */,
 				648A9DE525CC026100E86561 /* APITarget.swift in Sources */,
 				648A9DFD25CD070300E86561 /* NSError+Extensions.swift in Sources */,
 			);

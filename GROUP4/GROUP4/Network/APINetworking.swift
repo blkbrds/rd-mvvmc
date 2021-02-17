@@ -9,7 +9,7 @@
 import Foundation
 import Moya
 
-enum APICompletion<Failure> where Failure: Error {
+enum APIResult<Failure> where Failure: Error {
     case success
     case failure(Failure)
 }

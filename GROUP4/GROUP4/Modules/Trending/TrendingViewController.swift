@@ -1,5 +1,5 @@
 //
-//  TrandingViewController.swift
+//  TrendingViewController.swift
 //  GROUP4
 //
 //  Created by Cuong Doan M. on 2/17/21.
@@ -8,19 +8,19 @@
 
 import UIKit
 
-final class TrandingViewController: UIViewController {
+final class TrendingViewController: UIViewController {
     
-    let viewModel: TrandingViewModel = TrandingViewModel()
+    let viewModel: TrendingViewModel = TrendingViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        getTranding()
+        getTrending()
     }
     
-    private func getTranding() {
+    private func getTrending() {
         showHUD()
-        viewModel.getTranding { [weak self] result in
+        viewModel.getTrending { [weak self] result in
             guard let this = self else { return }
             this.hideHUD()
             switch result {
